@@ -1,0 +1,31 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "webcam-object-detector"
+version = "0.1.0"
+description = "A real-time desktop application for object detection via webcam using PySide6 and YOLO"
+readme = "README.md"
+requires-python = ">=3.10"
+license = {text = "MIT"}
+authors = [
+    {name = "Jules", email = "jules@example.com"}
+]
+dependencies = [
+    "opencv-python-headless>=4.8.0",
+    "PySide6>=6.5.0",
+    "ultralytics>=8.0.0",
+    "numpy>=1.24.0",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=7.0.0",
+]
+
+[project.scripts]
+webcam-detector = "webcam_detector.main:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]

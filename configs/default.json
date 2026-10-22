@@ -1,0 +1,19 @@
+{
+  "camera": {
+    "index": 0,
+    "width": 640,
+    "height": 480,
+    "fps": 30
+  },
+  "detection": {
+    "model_name": "yolov8n.pt",
+    "confidence_threshold": 0.45,
+    "show_boxes": true,
+    "show_labels": true,
+    "show_confidence": true
+  },
+  "paths": {
+    "screenshot_dir": "~/Pictures/WebcamDetector",
+    "model_dir": "~/.cache/webcam_detector/models"
+  }
+}
